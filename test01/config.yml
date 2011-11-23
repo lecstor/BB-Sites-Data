@@ -1,0 +1,32 @@
+---
+id: 1
+store_name: Somewhere
+company_name: Blockbuster
+http: 'http://test01.bbstore.com.au'
+https: 'https://test01.bbstore.com.au'
+address: &link_address '123 Buster St, Blockville, NSW 4321'
+contact: &link_contact
+  email: test01@example.com
+  phone: 123456789
+analytics:
+  google:
+    id: ~
+view:
+  default:
+    template_paths:
+#      - ''
+#      - /brand_bb
+#      - /layout_2000
+      - /base_bootstrap
+  mobile:
+    template_paths:
+      - ''
+      - /bb_mobile
+      - /base_mobile
+email:
+  stash:
+    signature:
+      html: <b>Block Buster Test</b>
+      plain: Block Buster Test
+    address: *link_address
+    contact: *link_contact

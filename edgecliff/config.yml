@@ -1,0 +1,36 @@
+---
+site:
+  name: edgecliff
+  template_paths:
+    - 'themes/bb2000'
+    - 'base'
+  static_path: '/themes/2000/static'
+  subdomain:
+    m: 
+      template_paths:
+        - 'themes/mhubm0001'
+    cp: 
+      theme: default
+    mcp: 
+      template_paths:
+        - 'themes/vema0001'
+site_id: 1
+website: &website_details
+  moniker: edgecliff
+  title: Video Ezy Edgecliff
+  intro: Franchise Store has no theme or templates of it's own. It uses only the base templates.
+  url: 'http://edgecliff.lecstor.com'
+  secure_url: 'http://edgecliff.lecstor.com'
+  analytics_id: ~
+business: &business_details
+  name: Video Ezy Edgecliff
+  address: 'Shop 1A Edgecliff Centre, New South Head Road, Edgecliff 2027'
+  email: info@videoezyedgecliff.com.au
+  phone: 123456789
+email:
+  stash:
+    signature:
+      html: <b>Video Ezy Edgecliff</b>
+      plain: Video Ezy Edgecliff
+    website: *website_details
+    business: *business_details

@@ -1,0 +1,4 @@
+---
+map:
+  localhost: test01
+  192.168.0.4: test01

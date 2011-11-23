@@ -1,0 +1,55 @@
+---
+website:
+  title: Your Web Site Name
+  intro: A short introduction to your web site.
+  url: http://your_url
+  secure_url: https://your_secure_url
+  email: website_email_address
+  phone: 123456789
+business:
+  name: Your Business Name
+  address: Your Business Address
+  email: business@example.com
+  phone: 123456789
+person:
+  validate:
+    email:
+      from: 'Lecstor Server <server@lecstor.com>'
+      subject: 'Email Address Validation'
+      content_type: 'multipart/alternative'
+      template:
+        html: 'email/validate_html.tt'
+        plain: 'email/validate_plain.tt'
+  welcome:
+    email:
+      from: 'Lecstor Server <server@lecstor.com>'
+      subject: 'Welcome'
+      content_type: 'multipart/alternative'
+      template:
+        html: 'email/welcome_html.tt'
+        plain: 'email/welcome_plain.tt'
+  new_user:
+    email:
+      to: jason@eightdegrees.com.au
+      from: 'Lecstor Server <server@lecstor.com>'
+      subject: 'New User Registration'
+      content_type: 'multipart/alternative'
+      template:
+        html: 'email/new_user_html.tt'
+        plain: 'email/new_user_plain.tt'
+  account_key:
+    email:
+      from: 'Lecstor Server <server@lecstor.com>'
+      subject: 'Account Key'
+      content_type: 'multipart/alternative'
+      template:
+        html: 'email/account_key_html.tt'
+        plain: 'email/account_key_plain.tt'
+  temporary_password:
+    email:
+      from: 'Lecstor Server <server@lecstor.com>'
+      subject: 'Temporary Password'
+      content_type: 'multipart/alternative'
+      template:
+        html: 'email/temporary_password_html.tt'
+        plain: 'email/temporary_password_plain.tt'

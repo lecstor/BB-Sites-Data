@@ -1,0 +1,39 @@
+[%
+  WRAPPER  email/wrap/default_html.tt
+%]
+
+<p>Hi[% IF person.name %] [% person.name %][% END %],</p>
+
+<p>Welcome to [% website.domain %]. We hope you find it an enjoyable
+and rewarding experience. Our new Edgecliff store is a unique store
+designed to fit our situation and the times. It is based on a "Clicks
+and Mortar" concept, whereby a dedicated website is combined with a
+big library in a small store.</p>
+
+<p>To find out more about the store go to:
+<a href="[% website.url %]/info/help">[% website.url %]/info/help</a></p>
+
+  <p>Tip: If you are coming down to the store straight away and want instant
+  information on the availability of titles in your order, give us a call
+  on [% business.phone %] after you've placed your order.</p>
+
+  <p>
+    To get you started with the website and welcome you to our new store
+    please select one of the following FREE RENTAL OFFERS with our
+    compliments:
+    <ul>
+      <li><a href="[% website.url %]/movies/search?new_release=1">Book 1 FREE New Release hire</a></li>
+      <li><a href="[% website.url %]/movies/search?rent_group=w">or book two FREE Weekly titles</a></li>
+    </ul>
+  </p>
+
+  <p>Give us a call on [% business.phone %] or email <a href="mailto:[% business.email %]">[% business.email %]</a> if you
+  have any questions or suggestions.</p>
+
+  <p>Happy viewing!</p>
+
+  <p>Jonathan, Jon and the Team from Video Ezy Edgecliff</p>
+
+  [% signature.html %]
+
+[% END %]

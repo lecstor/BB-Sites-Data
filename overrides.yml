@@ -1,0 +1,5 @@
+tt:
+  COMPILE_EXT: '.ttc'
+  STAT_TTL: 60
+  CACHE_SIZE: 20
+  COMPILE_DIR: /tmp/franchise/tt/cache
