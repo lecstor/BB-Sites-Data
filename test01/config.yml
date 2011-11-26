@@ -6,7 +6,7 @@ http: 'http://test01.bbstore.com.au'
 https: 'https://test01.bbstore.com.au'
 address: &link_address '123 Buster St, Blockville, NSW 4321'
 contact: &link_contact
-  email: test01@example.com
+  email: &default_email test01@example.com
   phone: 123456789
 analytics:
   google:
@@ -30,3 +30,6 @@ email:
       plain: Block Buster Test
     address: *link_address
     contact: *link_contact
+welcome_email:
+  from: *default_email
+  subject: Welcome to Blockbuster Somewhere
